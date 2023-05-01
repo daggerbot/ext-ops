@@ -32,6 +32,33 @@ impl Display for ArithmeticError {
     }
 }
 
+impl From<Overflow> for ArithmeticError {
+    fn from(_: Overflow) -> ArithmeticError {
+        ArithmeticError::Overflow
+    }
+}
+
+impl From<RangeError> for ArithmeticError {
+    fn from(err: RangeError) -> ArithmeticError {
+        match err {
+            RangeError::Underflow => ArithmeticError::Underflow,
+            RangeError::Overflow => ArithmeticError::Overflow,
+        }
+    }
+}
+
+impl From<Undefined> for ArithmeticError {
+    fn from(_: Undefined) -> ArithmeticError {
+        ArithmeticError::Undefined
+    }
+}
+
+impl From<Underflow> for ArithmeticError {
+    fn from(_: Underflow) -> ArithmeticError {
+        ArithmeticError::Underflow
+    }
+}
+
 #[cfg(feature = "std")]
 impl std::error::Error for ArithmeticError {
     fn description(&self) -> &str { self.brief() }
@@ -77,6 +104,18 @@ impl RangeError {
 impl Display for RangeError {
     fn fmt(&self, f: &mut Formatter) -> core::fmt::Result {
         f.write_str(self.brief())
+    }
+}
+
+impl From<Overflow> for RangeError {
+    fn from(_: Overflow) -> RangeError {
+        RangeError::Overflow
+    }
+}
+
+impl From<Underflow> for RangeError {
+    fn from(_: Underflow) -> RangeError {
+        RangeError::Underflow
     }
 }
 
