@@ -2,7 +2,17 @@
 name = "ext-ops"
 version = "1.0.0-main"
 edition = "2021"
+
+authors = [
+    "Martin Mills <daggerbot@gmail.com>",
+]
+categories = ["mathematics", "no-std", "rust-patterns"]
+description = "General purpose arithmetic operator traits which are missing from the standard library"
+homepage = "https://github.com/daggerbot/ext-ops"
+keywords = ["mathematics", "no-std", "no_std"]
 license = "MPL-2.0"
+readme = "README.md"
+repository = "https://github.com/daggerbot/ext-ops"
 
 [features]
 default = ["std"]

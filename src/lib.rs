@@ -8,8 +8,7 @@
 
 #![cfg_attr(not(feature = "std"), no_std)]
 
-///! General purpose arithmetic operator traits for Rust which are missing from the standard
-///! library.
+///! General purpose arithmetic operator traits which are missing from the standard library.
 
 mod error;
 mod saturating_ops;
