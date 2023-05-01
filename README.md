@@ -2,6 +2,7 @@
 
 Copyright (c) 2023 Martin Mills [<daggerbot@gmail.com>]
 
+[![crates.io](https://img.shields.io/crates/v/ext-ops.svg)](https://crates.io/crates/ext-ops)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 General purpose arithmetic operator traits for Rust which are missing from the standard library.

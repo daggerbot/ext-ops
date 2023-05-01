@@ -8,6 +8,7 @@ authors = [
 ]
 categories = ["mathematics", "no-std", "rust-patterns"]
 description = "General purpose arithmetic operator traits which are missing from the standard library"
+documentation = "https://docs.rs/ext-ops/latest/ext_ops/"
 homepage = "https://github.com/daggerbot/ext-ops"
 keywords = ["mathematics", "no-std", "no_std"]
 license = "MPL-2.0"
